@@ -1,0 +1,33 @@
+https://education.oracle.com/oracle-certified-associate-java-se-8-programmer/trackp_333
+
+
+
+
+
+
+
+import java.util.ArrayList;
+class Demo{   
+    public static void main(String[] ab){
+        int getal = 4;
+        if(getal == 5) {
+            System.out.println("is vijf");
+        }else if(getal == 4){
+            System.out.println("is geen vier");
+        }else {
+            System.out.println("is geen vijf of vier");
+        }
+        
+        switch(getal) {// byte short int char string Byte Short Integer Character
+        default:
+            System.out.println("anders");
+        case 3:
+            System.out.println("drie");
+            break;
+        case 4:
+            System.out.println("vier");
+
+        }
+    }
+
+}

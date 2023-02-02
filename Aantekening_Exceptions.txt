@@ -1,0 +1,33 @@
+class Demo{   
+    public static void main(String[] ab)throws Exception{
+        Docent d = new Docent();
+        try {
+            d.doceren();
+        }catch(Exception e) {
+            System.out.println("boeteclausule opzoeken");
+        }
+        try {
+            d.doceren();
+        }catch(Exception e) {
+            System.out.println("ouders bellen");
+        }
+        d.doceren();
+    }
+
+}
+class Docent{
+    int aantalLeerlingen = 6;
+    void doceren() throws Exception{
+        if(aantalLeerlingen > 0) {
+            System.out.println("lekker lesgeven");
+        }else {
+            throw new Exception();
+        }
+    }
+}
+
+// Oplossing try{
+		}catch{
+		}
+
+// of Throws bij methode, over de hek gooien

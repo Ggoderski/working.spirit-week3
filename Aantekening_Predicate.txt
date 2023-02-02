@@ -1,0 +1,21 @@
+class App{   
+    public static void main(String[] ab){
+        
+
+	Predicate
+	true or false 
+
+
+	Propositions 
+	
+	v A = {2, 3, 5}
+	^ B = {1, 3, 7}
+
+	A^B = {3}
+	AvB = {1, 2, 3, 5, 7}
+
+	true v false --> true
+	true ^ false --> false
+
+	
+}

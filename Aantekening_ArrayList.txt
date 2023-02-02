@@ -1,0 +1,73 @@
+class App{   
+    public static void main(String[] ab){
+        
+
+	// ArrayList, kun je alles in stoppen, variables, strings, objecten
+	// List - ArrayList, LinkList
+
+
+	// ArrayList, 	ABCDEFG
+	//			1234567
+	// LinkList, 	A -> B -> C -> D -> E -> F -> G
+	// 			1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
+	// Kan worden aan gepast
+
+
+
+	foo(List<String>names) {
+		
+	}
+	
+	ArrayList < String > names = new ArrayList <>();
+	names.add("Timo");
+	names.add("Roger");
+	names.add("Gideon);
+
+
+	/* Fout
+
+	Television samsung = new Samsung();
+	names.add(samsung);
+	names.add(3)
+
+	*/
+
+	for (String name : names {
+		System.out.println(name);
+
+
+	ArrayList<String> names = new ArrayList<>();
+	ArrayList<Integer> numbers = new ArrayList<>();	
+
+
+
+		names.add("Gideon");
+		names.add("Claudia");
+		names.add("Deveney");
+		
+		numbers.add(27);
+		numbers.add(25);
+		numbers.add(26);
+		
+		for (String name : names) {
+			System.out.println(name);
+			
+		}
+		
+		for (Integer number : numbers) {
+			System.out.println(number);
+		}
+
+		
+		
+    }
+}
+
+
+class Television {
+
+	
+
+
+
+}

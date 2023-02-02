@@ -1,0 +1,16 @@
+class Demo {  
+    
+	public static void main(String[] args){
+		try {
+			boolean ditwerkt = true;
+			if(ditwerkt) {
+				System.out.println("doe iets");
+			} else {
+				System.out.println("doe neits");
+			}
+				throw new Exception();
+		}catch(Exception e) {
+			System.out.println("e " + e);
+		}
+	}
+}

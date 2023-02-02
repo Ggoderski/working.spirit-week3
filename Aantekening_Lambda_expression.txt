@@ -1,0 +1,33 @@
+class Demo{   
+    public static void main(String[] ab){
+            new Demo().voorstellen("Felix");
+            new Demo().voorstellen("Raymond");
+            Demo d = new Demo();
+            d.optellen(4, 2);
+            d.optellen(12, 6);
+            Berekening b = (t,y) -> t * y;
+            int c = b.berekenen(5,6);
+            
+            System.out.println(c);
+            d.uitrekenen(  (abc, def) -> abc * abc + def  );
+            d.uitrekenen( b );
+            b = (u , w) -> u * 15;
+            d.uitrekenen(b);
+    }
+    void uitrekenen(Berekening q) {
+        System.out.println( q.berekenen(4, 2) );
+        System.out.println("go");
+    }
+    void voorstellen(String voornaam) {
+        System.out.println("Hoi, ik ben "+voornaam);
+    }
+    int optellen(int getal, int getalb) {
+        System.out.println(getal + " plus "+getalb+" = "+(getal + getalb));
+        return getal+getalb;
+    }
+}
+@FunctionalInterface
+interface Berekening{
+    int berekenen(int a , int b);
+    
+}    

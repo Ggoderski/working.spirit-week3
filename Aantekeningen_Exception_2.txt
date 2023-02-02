@@ -1,0 +1,77 @@
+public class Demo {
+    public static void main(String[] args){
+        String een = "een";
+        String twee = "twee";
+        een.concat(twee);
+        
+        System.out.println(een);
+        StringBuilder sb = new StringBuilder("drie");
+        sb.append("vier");
+        System.out.println(sb);
+    }    
+}
+
+Typ hier uw programma.
+
+
+import eerste.Auto;
+public class Demo {
+    public static void main(String[] args){
+        int a = 4;
+        long b = a;  // widening
+        Integer c = a;// autoboxing
+        
+        Integer d = new Integer(25);
+        
+        int e = d; // unboxing
+        // FQN
+        eerste.Auto aa = new eerste.Auto();
+        Auto bb = new Auto();
+    }    
+}
+
+=====================
+
+PAKAGES
+import eerste.Auto;
+import static eerste.Konijn.rennen;
+public class Demo {
+    public static void main(String[] args){
+        int a = 4;
+        long b = a;  // widening
+        Integer c = a;// autoboxing
+        
+        Integer d = new Integer(25);
+        
+        int e = d; // unboxing
+        // FQN
+        eerste.Auto aa = new eerste.Auto();
+        Auto bb = new Auto();
+        rennen();
+        System.out.println( rennen  );
+        new Taart().eten = 5;
+        new Taart().eten();
+        
+    }    
+}
+class Taart{
+    int eten;
+    void eten() {}
+}
+
+===================
+
+LAMBDA
+public class Demo {
+      static public final void main(String args[]){
+         System.out.println("check");
+         
+         Horloge h = t -> {return t+t;} ;
+         
+    }    
+}
+
+
+interface Horloge{
+    int kijken(int tijd);
+}
